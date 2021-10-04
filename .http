@@ -1,0 +1,24 @@
+
+### POST Missing route api
+POST https://localhost:4000/api HTTP/1.1
+
+### GET Missing route missing
+GET https://localhost:4000/missing HTTP/1.1
+
+### GET Snippet - Not Found
+GET https://localhost:4000/snippet/foo HTTP/1.1
+
+### GET Snippet ID=1
+GET https://localhost:4000/snippet/1 HTTP/1.1
+
+### HEAD Snippet ID=1
+HEAD https://localhost:4000/snippet/1 HTTP/1.1
+
+### Snippet - Method Not Allowed
+POST https://localhost:4000/snippet/1 HTTP/1.1
+
+### Form Insert Snippet
+GET https://localhost:4000/snippet/create HTTP/1.1
+
+### Insert Snippet - Bad Request
+POST https://localhost:4000/snippet/create HTTP/1.1
